@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  ven. 28 fév. 2020 à 14:13
+-- Généré le :  lun. 02 mars 2020 à 13:05
 -- Version du serveur :  5.7.26
 -- Version de PHP :  7.2.18
 
@@ -47,7 +47,7 @@ DROP TABLE IF EXISTS `produits`;
 CREATE TABLE IF NOT EXISTS `produits` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `code_produit` varchar(16) NOT NULL,
-  `nom` varchar(50) NOT NULL,
+  `nom` varchar(255) NOT NULL,
   `detail` text NOT NULL,
   `categorie` varchar(255) NOT NULL,
   `quantite` int(11) NOT NULL,
@@ -66,11 +66,11 @@ CREATE TABLE IF NOT EXISTS `produits` (
 DROP TABLE IF EXISTS `utilisateurs`;
 CREATE TABLE IF NOT EXISTS `utilisateurs` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `nom` varchar(50) NOT NULL,
-  `prenom` varchar(50) NOT NULL,
-  `email` varchar(70) NOT NULL,
-  `mot_de_passe` varchar(50) NOT NULL,
-  `type` varchar(25) NOT NULL,
+  `nom` varchar(255) NOT NULL,
+  `prenom` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `mot_de_passe` varchar(255) NOT NULL,
+  `type` varchar(255) NOT NULL,
   `actif` tinyint(1) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
