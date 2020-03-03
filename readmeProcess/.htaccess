@@ -1,0 +1,4 @@
+AuthName "Restricted area"
+AuthType Basic
+AuthUserFile "A:\Trunky\conceptionWeb\CDA\projetGestionStock\projetStock\readmeProcess\.htpasswd"
+Require valid-user
