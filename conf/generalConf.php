@@ -8,7 +8,7 @@
 // echo $_SERVER['REMOTE_ADDR']."<br>";
 // die("Die ici ==> ".$_SERVER['PHP_SELF']); /* */
 // Mode test - actif : 0-1
-    define('MODE_TEST', 1);
+    define('MODE_TEST', 0);
 
 
 // #############################################################################
