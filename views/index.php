@@ -15,9 +15,9 @@ require_once (PATH_MACHINE."autoLoader/AutoLoad.php");
     }
 // appel du header
 require_once ("header.php");
-// appel du header
+// appel du body
 require_once ("body.php");
-// appel du header
+// appel du footer
 require_once ("footer.php");    
 // Test de variable du generalconf
 // echo "variable EMAIL_SUPPORT_TECH: ". EMAIL_SUPPORT_TECH."<br>";
