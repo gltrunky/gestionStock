@@ -13,6 +13,12 @@ require_once (PATH_MACHINE."autoLoader/AutoLoad.php");
         error_reporting(E_ALL);
         ini_set("display_errors", 1);
     }
+// appel du header
+require_once ("header.php");
+// appel du header
+require_once ("body.php");
+// appel du header
+require_once ("footer.php");    
 // Test de variable du generalconf
 // echo "variable EMAIL_SUPPORT_TECH: ". EMAIL_SUPPORT_TECH."<br>";
 // echo "variable LANGUE_PAR_DEFAUT: ". LANGUE_PAR_DEFAUT. "<br>";
