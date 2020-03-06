@@ -1,5 +1,9 @@
+<?php
+// appel du header et footer
+require_once ("header.php");
+?>   
 <!-- S'identifier -->
-<!-- <div id="connexion">
+<div id="connexion">
 			<form class="form-signin">
 				<h1 class="h3 mb-3 font-weight-normal">Acces Stock</h1>
 				<figure><img src="../component/img/gestionStock.jpg" alt="icone de gestion du stock" width="150" height="111"></figure>
@@ -17,9 +21,6 @@
 					Connexion
 				</button>
 			</form>
-		</div> -->
-		<div id="dashcorp">
-		<div id="dashboard">
-		</div>
-		<div id="corp"></div>
-		</div>
+        </div>
+        <?php
+        require_once ("footer.php");

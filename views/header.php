@@ -19,30 +19,33 @@
 	</head>
 	<body>
 		<!-- Menu -->
-		<div class="navi">
+		<header class="navi">
 			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-					<a class="navbar-brand" href="#">
+					<a class="navbar-brand" href="index.php">
 						<i class="fas fa-home"></i>
 					</a>
-                    <a class="navbar-brand" href="#">
-                    <img src="../component/img/logo.png" class="d-inline-block align-top" alt="">
-                    GESTION STOCK
-                    </a>
+					<a class="navbar-brand" href="#">
+						<img src="../component/img/logo.png" class="d-inline-block align-top" alt="" width="60px"></a>
 					<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 						<li class="nav-item">
 							<a class="nav-link" href="#">
-                            <i class="fas fa-envelope"></i>
-                            contact-admin
+								<i class="fas fa-envelope"></i>
+								contact-admin
 							</a>
 						</li>
+						<!-- <li class="nav-item"><a href="#" class="nav-link"><?php echo Controllers::writingHello($arrayVar["maVar"]) ?></a></li> -->
 					</ul>
-					<button class="btn btn-success my-2 my-sm-0 mr-sm-2" type="text">
-						Connexion
-					</button>
+					<a href="connexion.php">
+						<button class="btn btn-dark my-2 my-sm-0 mr-sm-2" type="text">
+							Connexion
+						</button>
+					</a>
 				</div>
 			</nav>
-		</div>
+		</header>
+	</body>
+</html>

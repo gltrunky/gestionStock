@@ -18,25 +18,22 @@ body {
   z-index: 1000;
 }
 /* Corp de la page */
-#dashcorp {
+.dashcorp {
   padding-top: 60px;
   padding-left: 5px;
+  padding-bottom: 5px;
 }
 
-#dashboard {
-  width: 15%;
-  height: 800px;
+.dashboard {
+  height: 90vh;
   border: 1px solid black;
   background-color: blue;
-  display: inline-block;
 }
 
-#corp {
-  width: 84%;
-  height: 800px;
+.corp {
+  height: 90vh;
   border: 1px solid black;
   background-color: blueviolet;
-  display: inline-block;
 }
 /* page connexion */
 #connexion {
@@ -95,4 +92,7 @@ h1 {
 /* footer de la page */
 footer a {
   color: #fff;
+}
+.btn {
+  border: 1px solid #fff;
 }
