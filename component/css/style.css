@@ -10,15 +10,36 @@ body {
   font-family: Helvetica, Arial, sans-serif;
   background-color: var(--primary-color) !important;
 }
-
+/* Menu de la page */
 .navi {
   display: block;
   position: fixed;
   width: 100%;
   z-index: 1000;
 }
+/* Corp de la page */
+#dashcorp {
+  padding-top: 60px;
+  padding-left: 5px;
+}
+
+#dashboard {
+  width: 15%;
+  height: 800px;
+  border: 1px solid black;
+  background-color: blue;
+  display: inline-block;
+}
 
 #corp {
+  width: 84%;
+  height: 800px;
+  border: 1px solid black;
+  background-color: blueviolet;
+  display: inline-block;
+}
+/* page connexion */
+#connexion {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
@@ -71,6 +92,7 @@ h1 {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+/* footer de la page */
 footer a {
   color: #fff;
 }
