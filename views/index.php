@@ -28,7 +28,17 @@ $arrayVar = Controllers::secureArray($_REQUEST);
 //Test de l'api
 $param = "?ctrl=getUsers";
 $resultGetCurl = Controllers::getCurlRest($param);
-// var_dump($resultGetCurl);
+$resultGetCurl = json_decode($resultGetCurl);
+if ($resultGetCurl->status == "failed") {
+    die("Une erreur est survenue ! Veuillez contacter le support technique!");
+} elseif ($resultGetCurl->status == "success") {
+    echo "<pre>";
+    var_dump($resultGetCurl->result);
+    echo "</pre>";
+    // echo $resultGetCurl->result->email;
+} else {
+    die("Erreur critique");
+}
 // appel du header
 require_once("header.php");
 // appel du body

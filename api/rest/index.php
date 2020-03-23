@@ -1,14 +1,14 @@
 <?php
 // General Configuration
 require_once('../../conf/generalConf.php');
-require_once('../../classes/AutoLoad.php');
+require_once('../../autoLoader/AutoLoad.php');
 /**
  * Control access controleur
  * @param none
  * @return redirect is false
  */
-//   var_dump($_SERVER['SERVER_ADDR']);
-//   die();
+// var_dump($_SERVER['SERVER_ADDR']);
+// die();
 $autorizedAccess = false;
 $listAccessAutorized = array("127.0.0.1", "::1", "localhost", "10.120.3.16"); // 1,2,3 local wamp, 4 planet hoster
 foreach ($listAccessAutorized as $valueAccess) {

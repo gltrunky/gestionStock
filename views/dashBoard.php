@@ -2,11 +2,12 @@
     <!--Tableau de bord-->
     <div class="container-fluid border-danger border-bottom pl-1 ml-1">
         <div class="row">
-            <div class="col-4 bg-light mt-2 ml-2 mb-2 text-center border border-dark">
-                <i class="fas fa-user p-3 useri"></i>
+            <div class="col-3 mt-2 ml-2 mb-2 text-center">
+                <img src="/component/img/gastIcon.jpg" class="img-thumbnail rounded" height="60" width="60" alt="Avatar de l'utilisateur">
             </div>
-            <div class="col-7 pt-4">
-                <h6><strong>Admin</strong></br> Profil <i class="fas fa-unlock-alt"></i> Déconnexion</h6>
+            <div class="col-8 pt-4">
+                <h6><strong>Admin</strong></br>
+                    <a class="mr-2" href="#">Profil</a> <i class="fas fa-unlock-alt"></i> Déconnexion</h6>
             </div>
         </div>
     </div>
