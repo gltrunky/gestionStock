@@ -36,14 +36,11 @@
 							contact-admin
 						</a>
 					</li>
-					<li class="nav-item"><a href="#" class="nav-link">
-							<?php   // echo Controllers::writingHello($arrayVar["maVar"]) 
-							?>
-						</a></li>
 				</ul>
-				<a href="connexion.php">
+				<a href="#">
 					<button class="btn btn-dark my-2 my-sm-0 mr-sm-2" type="text">
-						Connexion
+						<?php echo Controllers::writingHello("Alex !")
+						?>
 					</button>
 				</a>
 			</div>

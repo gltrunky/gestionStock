@@ -168,4 +168,12 @@ class Controllers
         curl_close($curl);
         return $result;
     }
+    static function verifConnexionUser()
+    {
+        $result = true;
+        if (empty($_SESSION['id'])) {
+            $result = false;
+        }
+        return $result;
+    }
 }

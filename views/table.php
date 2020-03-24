@@ -2,6 +2,12 @@
     <!--CORP-->
     <table class="table table-hover table-secondary container-fluid">
         <thead>
+            <tr class="bg-primary">
+                <th>Liste des Produits</th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
             <tr>
                 <th scope="col">#</th>
                 <th scope="col">Nom</th>

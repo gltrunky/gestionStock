@@ -1,11 +1,7 @@
-<?php
-// appel du header et footer
-require_once("header.php");
-?>
 <!-- S'identifier -->
-<div id="connexion">
+<div class="mr-auto ml-auto">
 	<form class="form-signin">
-		<h1 class="h3 mb-3 font-weight-normal">Acces Stock</h1>
+		<h1 class="mb-3 font-weight-normal text-center">Acces Stock</h1>
 		<figure class="text-center"><img src="../component/img/gestionStock.jpg" alt="icone de gestion du stock" width="150" height="111"></figure>
 		<label for="inputEmail" class="sr-only">Adresse Email</label>
 		<input type="email" id="inputEmail" name="mail" value="" class="form-control" placeholder="Adresse Email" required autofocus />
@@ -18,9 +14,7 @@ require_once("header.php");
 			</label>
 		</div>
 		<button class="btn btn-lg btn-dark btn-block" type="submit">
-			Connexion
+			s'inscrire
 		</button>
 	</form>
 </div>
-<?php
-require_once("footer.php");

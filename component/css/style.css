@@ -6,7 +6,6 @@
 
 html,
 body {
-  height: 100%;
   font-family: Helvetica, Arial, sans-serif;
 }
 /* Menu de la page */
@@ -16,65 +15,11 @@ body {
   width: 100%;
   z-index: 1000;
 }
-/* Corp de la page */
+/* main de la page */
 .dashcorp {
   padding-top: 60px;
   padding-left: 5px;
   padding-bottom: 5px;
-}
-/* page connexion */
-#connexion {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-  align-items: center;
-  padding-top: 200px;
-  padding-bottom: 10%;
-}
-
-h1 {
-  text-align: center;
-  font-size: 40px !important;
-}
-
-#corp figure {
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
-#corp img {
-  border: solid 2px black;
-}
-
-.form-signin {
-  width: 100%;
-  max-width: 330px;
-  padding: 15px;
-  margin: auto;
-}
-.form-signin .checkbox {
-  font-weight: 400;
-}
-.form-signin .form-control {
-  position: relative;
-  box-sizing: border-box;
-  height: auto;
-  padding: 10px;
-  font-size: 16px;
-}
-.form-signin .form-control:focus {
-  z-index: 2;
-}
-.form-signin input[type="email"] {
-  margin-bottom: -1px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-}
-.form-signin input[type="password"] {
-  margin-bottom: 10px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
 }
 /* footer de la page */
 footer a {

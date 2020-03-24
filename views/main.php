@@ -1,7 +1,12 @@
 <div class="dashcorp">
     <div class="row">
         <?php require_once("dashBoard.php"); ?>
-        <?php require_once("table.php");
+        <?php
+        if ($connected) {
+            require_once("table.php");
+        } else {
+            require_once("connexion.php");
+        }
         ?>
     </div>
 </div>
