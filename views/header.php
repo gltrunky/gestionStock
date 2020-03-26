@@ -39,7 +39,11 @@
 				</ul>
 				<a href="#">
 					<button class="btn btn-dark my-2 my-sm-0 mr-sm-2" type="text">
-						<?php echo Controllers::writingHello("Alex !")
+						<?php if (!$connected) {
+							echo Controllers::writingHello("");
+						} else {
+							echo Controllers::writingHello("Alex");
+						}
 						?>
 					</button>
 				</a>

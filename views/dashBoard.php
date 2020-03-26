@@ -8,9 +8,9 @@
                     <img src="/component/img/gastIcon.jpg" class="img-thumbnail rounded" height="60" width="60" alt="Avatar de l'utilisateur">
                 </div>
                 <div class="col-8 pt-4">
-                    <h6><strong>Admin</strong></br>
+                    <h6><strong><?php echo $user->type ?></strong></br>
                         <a class="mr-2 text-decoration-none text-white" href="#">Profil</a> <i class="fas fa-unlock-alt"></i>
-                        <a class="text-decoration-none text-white" href="#">Deconnexion</a></h6>
+                        <a class="text-decoration-none text-white" href="deconnexion.php">Deconnexion</a></h6>
                 </div>
             </div>
         </div>
@@ -37,10 +37,10 @@
         <div class="container-fluid border-danger border-bottom pl-1 ml-1">
             <div class="row">
                 <div class="col-3 mt-2 ml-2 mb-2 text-center">
-                    <img src="/component/img/gastIcon.jpg" class="img-thumbnail rounded" height="60" width="60" alt="Avatar de l'utilisateur">
+                    <!-- <img src="/component/img/logo.png" class="img-thumbnail rounded" height="60" width="60" alt="Avatar de l'utilisateur"> -->
                 </div>
                 <div class="col-8 pt-4">
-                    <h6><strong>Bonjour</strong></br>
+                    <h6><strong>Pensez a vous connecté !</strong></br>
                         <i class="fas fa-unlock-alt"></i>
                         <a class="text-decoration-none text-white" href="#">Connexion</a></h6>
                 </div>

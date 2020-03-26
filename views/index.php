@@ -28,22 +28,60 @@ $arrayVar = Controllers::secureArray($_REQUEST);
 
 //Connexion
 // test connexxion
-// $_SESSION['id'] = "1";
 $connected = Controllers::verifConnexionUser();
 
-//Test de l'api
-$param = "?ctrl=getUsers";
-$resultGetCurl = Controllers::getCurlRest($param);
-$resultGetCurl = json_decode($resultGetCurl);
-if ($resultGetCurl->status == "failed") {
-    die("Une erreur est survenue ! Veuillez contacter le support technique!");
-} elseif ($resultGetCurl->status == "success") {
-    // echo "<pre>";
-    // var_dump($resultGetCurl->result);
-    // echo "</pre>";
-    // echo $resultGetCurl->result->email;
-} else {
-    die("Erreur critique");
+$inscription = false;
+//verifie que l'utilisateur est cliké sur s'inscrire dans la page connexion.php
+if (isset($_REQUEST['inscription']) && !empty($_REQUEST['inscription'])) {
+    $inscription = true;
+}
+
+if (
+    !$connected
+    && isset($_POST['mail']) && !empty($_POST['mail'])
+    && isset($_POST['mdp']) && !empty($_POST['mdp'])
+) {
+
+    //Test de l'api
+    $param = "?ctrl=getUsers";
+    $resultGetCurl = Controllers::getCurlRest($param);
+    $resultGetCurl = json_decode($resultGetCurl);
+    if ($resultGetCurl->status == "failed") {
+        die("Une erreur est survenue ! Veuillez contacter le support technique!");
+    } elseif ($resultGetCurl->status == "success") {
+        foreach ($resultGetCurl->result as $user) {
+            if ($_POST['mail'] == $user->email && $_POST['mdp'] == $user->mot_de_passe) {
+                $connected = true;
+                $_SESSION['idUser'] = $user->id;
+                break;
+            }
+        }
+        // echo "<pre>";
+        // var_dump();
+        // echo "</pre>";
+        // echo $resultGetCurl->result->email;
+    } else {
+        die("Erreur critique");
+    }
+} else if ($connected) {
+    $param = "?ctrl=getUsers";
+    $resultGetCurl = Controllers::getCurlRest($param);
+    $resultGetCurl = json_decode($resultGetCurl);
+    if ($resultGetCurl->status == "failed") {
+        die("Une erreur est survenue ! Veuillez contacter le support technique!");
+    } elseif ($resultGetCurl->status == "success") {
+        foreach ($resultGetCurl->result as $user) {
+            if ($_SESSION['idUser'] == $user->id) {
+                break;
+            }
+        }
+        // echo "<pre>";
+        // var_dump();
+        // echo "</pre>";
+        // echo $resultGetCurl->result->email;
+    } else {
+        die("Erreur critique");
+    }
 }
 // appel du header
 require_once("header.php");

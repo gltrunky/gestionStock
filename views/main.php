@@ -4,6 +4,8 @@
         <?php
         if ($connected) {
             require_once("table.php");
+        } else if ($inscription) {
+            require_once("formu.php");
         } else {
             require_once("connexion.php");
         }

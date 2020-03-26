@@ -171,7 +171,7 @@ class Controllers
     static function verifConnexionUser()
     {
         $result = true;
-        if (empty($_SESSION['id'])) {
+        if (empty($_SESSION['idUser'])) {
             $result = false;
         }
         return $result;
